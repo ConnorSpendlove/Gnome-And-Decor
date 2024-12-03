@@ -116,7 +116,7 @@ nav .dropdown-content a:hover {
     background-color: #DDA15E;
 }
 
-/* Show dropdown when hovering over the Portfolio menu item */
+/* Show dropdown when hovering over the portfolio tab */
 nav .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -218,7 +218,9 @@ main p {
 
 /* Styles for footer img list */
 #XLogo,
-#faceBookLogo {
+#faceBookLogo,
+#linkedInLogo,
+#githubLogo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,18 +228,20 @@ main p {
 
 /* Styles for footer img */
 #XLogo img,
-#faceBookLogo img {
+#faceBookLogo img,
+#linkedInLogo img,
+#githubLogo img {
     border-radius: 10px;
 }
 
-   /* Center the main container on the page */
-   #gnome-main {
+/* Center the main container on the page */
+#gnome-main {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
 
-/* Center the card */
+/* Gnome card styling */
 .gnome-card {
   position: relative;
   width: 100%;
@@ -251,7 +255,7 @@ main p {
   align-items: center;
 }
 
-/* Default Gnome Image */
+/* Default gnome image */
 .gnome-card img#gnome-image {
   position: absolute;
   top: 0;
@@ -261,10 +265,10 @@ main p {
   z-index: 0;
 }
 
-/* Carousel container */
+/* Carousel container, aligns the images  */
 .carousel-container {
   position: absolute;
-  top: 100px; /* Adjust the positioning based on where you want the carousels */
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
@@ -276,13 +280,13 @@ main p {
   margin-bottom: 10px;
 }
 
-/* Ensuring the carousel images fit */
+/* ALigns the cutsom images in the center of the carousel*/
 .carousel-inner {
   text-align: center;
 }
 
 .carousel-item img {
-  width: 110px; /* Fit images to the gnome size */
+  width: 110px;
   height: 110px;
   object-fit: contain;
 }
@@ -292,16 +296,18 @@ main p {
   background-color: black;
 }
 
+/* Background color for section */
 .gnome-section{
     background-color: #606C38;
 }
 
+/* Background color for different section */
 .gnome-section-header {
     background-color: #FEFAE0
 
 }
 
-#gnome-section-p {
+#gnome-section-p, .portfolio-header p {
     text-align: center;
     color: #FEFAE0;
     font-size: 1.25em;
@@ -311,7 +317,6 @@ main p {
     width: 100%;
 }
 
-
 /* Style for the random name section */
 .gnome-name, .gnome-purchase {
     text-align: center;
@@ -319,16 +324,17 @@ main p {
     font-size: 20px;
     font-weight: bold;
     color: #FEFAE0;
-    display: none; /* Hidden by default */
+    display: none;
 }
 
+/* Custom styling for gnome name span */
 #gnome-name{
     color: #A7BBEC;
     font-weight: bold;
 }
 
 /* Button styling */
-#submit-btn, #purchase-btn{
+#submit-btn, #purchase-btn, #resume-btn{
     display: block;
     margin: 20px auto; 
     padding: 10px 20px; 
@@ -342,55 +348,87 @@ main p {
 }
 
 /* Button hover effect */
-#submit-btn:hover, #purchase-btn:hover {
+#submit-btn:hover, #purchase-btn:hover, #resume-btn:hover {
     background-color: #89023E; 
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .gnome-card {
-    width: 90%;
-    height: 450px;
-  }
-
-  .gnome-card img#gnome-image {
-    width: 180px;
-    height: 410px;
-  }
-
-  .carousel-item img {
-    width: 90px; /* Scale down carousel images for smaller screens */
-    height: 90px;
-  }
-
-  .carousel-container {
-    width: 80%;
-    top: 80px;
-  }
+/* Aligns the projects in the center of the screen */
+.portfolio-projects{
+    text-align: center;
 }
 
-@media (max-width: 576px) {
-  .gnome-card {
-    width: 100%;
-    height: 400px;
-  }
-
-  .gnome-card img#gnome-image {
-    width: 150px;
-    height: 350px;
-  }
-
-  .carousel-item img {
-    width: 80px; /* Further scale down carousel images */
-    height: 80px;
-  }
-
-  .carousel-container {
-    width: 80%;
-    top: 60px;
-  }
-
+/* Styles for header in portfolio h2 */
+.portfolio-header h2 {
+    color: #FEFAE0;
 }
+
+/* Styles for links in portfolio */
+.portfolio-projects a {
+    color: #DDA15E;
+    text-decoration: none;
+}
+
+/* Hover styles for links in portfolio */
+.portfolio-projects a:hover {
+    color:#FEFAE0;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+/* Accordion Styles */
+.accordion .card {
+    border: none;
+    margin-bottom: 1rem;
+    background-color: #FEFAE0; 
+    border-radius: 8px;
+}
+
+/* Accordion header */
+.accordion .card-header {
+    background-color: #283618; 
+    color: #FEFAE0;
+    font-size: 1.2rem;
+    padding: 1em;
+    border-radius: 8px 8px 0 0;
+    border: none;
+    text-decoration: none;
+}
+
+/* Accordion button inside the header */
+.accordion .btn-link {
+    color: #DDA15E; 
+    text-decoration: none;
+}
+
+/* Accordion button text on hover */
+.accordion .btn-link:hover {
+    color: #FEFAE0; 
+    text-decoration: none;
+}
+
+/* No underline when the button is focused or clicked and change color */
+.accordion .btn-link:focus,
+.accordion .btn-link:active {
+    color: #FEFAE0; 
+    text-decoration: none; 
+}
+
+/* Accordion body */
+.accordion .card-body {
+    background-color: #606C38;
+    color: #FEFAE0;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0 0 8px 8px; 
+    text-decoration: none;
+}
+
+/* Accordion collapsed state */
+.accordion .collapse {
+    background-color: #FEFAE0; 
+    text-decoration: none;
+}
+
 
 /* Mobile Media Query */
 @media (max-width: 768px) {
@@ -464,6 +502,27 @@ main p {
         text-align: center;
     }
 
+    /* Makes all gnome assets smaller  */
+    .gnome-card {
+        width: 90%;
+        height: 450px;
+      }
+    
+      .gnome-card img#gnome-image {
+        width: 180px;
+        height: 410px;
+      }
+    
+      .carousel-item img {
+        width: 90px; 
+        height: 90px;
+      }
+    
+      .carousel-container {
+        width: 80%;
+        top: 80px;
+      }
+
 }
 
 /* For tablets and larger screens, show the nav links as a grid */
@@ -486,6 +545,30 @@ main p {
         color: white;
     }
 }
+
+/* Addition query for gnomes to make them even smaller for smaller viewports */
+@media (max-width: 576px) {
+    .gnome-card {
+      width: 100%;
+      height: 400px;
+    }
+  
+    .gnome-card img#gnome-image {
+      width: 150px;
+      height: 350px;
+    }
+  
+    .carousel-item img {
+      width: 80px; 
+      height: 80px;
+    }
+  
+    .carousel-container {
+      width: 80%;
+      top: 60px;
+    }
+  
+  }
 
 
 

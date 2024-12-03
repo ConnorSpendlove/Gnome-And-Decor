@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Connor Spendlove's Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+       <!-- Header Section -->
+  <!-- Header Section -->
+<header class="header">
+    <h1>Connor Spendlove's Portfolio</h1>
+    <nav>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar">☰</span>
+        </div>
+        <ul id="nav-links">
+            <!-- Nav links -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <li><a href="../createAGnome.html">Create a Gnome!</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+            <!-- Dropdown Section for portfolio's in the nav bar -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Portfolio's</a>
+                <ul class="dropdown-content">
+                    <li><a href="portfolio's/connor.html">Connor Spendlove</a></li>
+                    <li><a href="portfolio's/drew.html">Drew Wilson</a></li>
+                    <li><a href="portfolio's/chase.html">Chase Riggs</a></li>
+                    <li><a href="portfolio's/juan.html">Juan Orcela</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Section for img and introduction  -->
+<section class="gnome-section">
+    <section class="portfolio-header text-center">
+        <img src="../images/connor.png" alt="Connor Spendlove" class="img-fluid rounded-circle" style="width: 200px; height: 200px; margin: 1em;"/>
+        <h2>About Me</h2>
+        <p>I'm a Software Development student at Southern Utah University (SUU). Previously, I attended the University of Utah's Full-Stack Development Boot Camp, specializing in MongoDB, Express.js, React, Node.js, and JavaScript. My expertise in these areas allows me to create innovative web applications aimed at optimizing user satisfaction through the fusion of creativity and technology.</p>
+        <a href="../pdf/Connor Spendlove's Resume.pdf" class="btn btn-primary" id="resume-btn"target="_blank" style="width: 20em;">View My Resume</a>
+    </section>
+</section>
+
+<!-- Main content section -->
+<main>
+    
+    <!-- Bootstrap Accordion Section for Projects -->
+    <section class="portfolio-projects">
+        <h3>Projects</h3>
+        <div class="accordion" id="projectsAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Picture Chat
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        A collaborative website project I made during my Full-Stack Coding Bootcamp. Utilizing JWT Authentication for creating accounts and logging in, mongoDB for backend data storage, and apollo server & GraphQL for query/mutation testing and execution.
+                        <a target="_blank" href="https://picture-chat.onrender.com/">View The Site Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Digital Deal Hunt
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        A simple collaborative project I made during my Full-Stack Coding Bootcamp. Utilizing 2 API's to fetch data to display current video game deals.
+                        <a target="_blank" href="https://connorspendlove.github.io/Project-1-Repo/index.html">View The Site Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Physics Sandbox
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        A personal webiste I created to simulate physics scenarios and interactive games.
+                        <a target="_blank" href="https://connorspendlove.github.io/Physics-Sandbox/">View The Site Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Note Taker
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        A personal project site created to take notes.
+                        <a target="_blank" href="https://note-taker-bn5s.onrender.com/">View The Site Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            React Portfolio
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        A personal portfolio I created using REACT.js.
+                        <a target="_blank" href="https://connorspendlovesresume.netlify.app/">View The Site Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Weekly Forecast
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#projectsAccordion">
+                    <div class="card-body">
+                        A personal project created to fetch the weather forecast for any city.
+                        <a target="_blank" href="https://connorspendlove.github.io/Weekly-Forecast/">View The Site Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer content section-->
+<footer>
+    <section class="Footer" id="footer">
+        <!-- Links to my socials -->
+        <h4>View my Socials!</h4>
+        <ul>
+            <li id = "linkedInLogo">
+                <img src ="../images/linkedin.png" alt ="LinkedIn logo">
+                <a href = "https://www.linkedin.com/in/connorspendlove/" target="_blank">LinkedIn</a>
+            </li>
+            <li id = "githubLogo">
+                <img src="../images/github.png" alt ="Github logo">
+                <a href = "https://github.com/ConnorSpendlove" target="_blank">Github</a>
+            </li>
+            
+        </ul>
+        <p>This page was created by <a href="connor.html">Connor Spendlove</a></p>
+        <p>Gnome & Décor&trade; 2024</p>
+      </section>
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript for toggling the mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>
