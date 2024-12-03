@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Gnome & Décor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+       <!-- Header Section -->
+  <!-- Header Section -->
+<header class="header">
+    <h1>Gnome & Décor</h1>
+    <nav>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar">☰</span>
+        </div>
+        <ul id="nav-links">
+            <!-- Nav links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="createAGnome.html">Create a Gnome!</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Dropdown Section for portfolio's in the nav bar -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Portfolio's</a>
+                <ul class="dropdown-content">
+                    <li><a href="portfolio's/connor.html">Connor Spendlove</a></li>
+                    <li><a href="portfolio's/drew.html">Drew Wilson</a></li>
+                    <li><a href="portfolio's/chase.html">Chase Riggs</a></li>
+                    <li><a href="portfolio's/juan.html">Juan Orcela</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Subheader for slogan -->
+<section class = "Subheader">
+    <h2>Gnomes for Everyone!</h2>
+</section>
+
+<!-- Main content section -->
+<main>
+    <h2>Welcome to Gnome & Décor</h2>
+    <p>At Gnome & Decor, we specialize in crafting whimsical, charming gnomes for all occasions. Whether you're looking for a fun addition to your garden or a personalized gift for a loved one, we've got you covered!</p>
+    <p>Our collection features a variety of styles, from classic garden gnomes to more modern and creative designs. We take pride in our craftsmanship and ensure that each gnome is made with care and attention to detail.</p>
+    <p>Explore our shop to find the perfect gnome for you or create your own with our custom gnome design service!</p>
+    <p>Stay connected with us on social media to get updates on new gnome designs, sales, and much more!</p>
+</main>
+
+<!-- Footer content section-->
+<footer>
+    <section class = "Footer" id = "footer">
+        <h4>Find us on social media!</h4>
+        <ul>
+            <li id = "XLogo">
+                <img src ="images/x.png" alt ="X logo">
+                <a href = "https://x.com/" target="_blank">X</a>
+            </li>
+            <li id = "faceBookLogo">
+                <img src="images/facebook.png" alt ="facebook logo">
+                <a href = "https://facebook.com" target="_blank">Facebook</a>
+            </li>
+            
+        </ul>
+        <p>This website was created by <a href="connor.html">Connor Spendlove</a>, <a href="drew.html">Drew Wilson</a>, <a href="chase.html">Chase Riggs</a>, and <a href="juan.html">Juan Orcela</a></p>
+        <p>Gnome & Décor&trade; 2024</p>
+    </section>
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript for toggling the mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

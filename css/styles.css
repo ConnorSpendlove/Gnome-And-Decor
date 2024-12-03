@@ -1,0 +1,493 @@
+/* Color Pallete -
+ Dark Green: #283618,  
+ Olive Green: #606C38, 
+ Cream: #FEFAE0 
+ Beige: #DDA15E 
+ Burnt Orange: #BC6C25 
+ Red: #89023E 
+ Powder Blue: #A7BBEC */
+
+ /* Styles for entire page / CSS reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for body */
+body {
+    color: #FEFAE0;
+    display: grid;
+    /* Header, main content, and footer */
+    grid-template-rows: auto 1fr auto; 
+    /* Ensures the page covers full height of the viewport */
+    min-height: 100vh; 
+    font-family: "Noto serif", serif;
+}
+
+/* Styles for header */
+header {
+    background-color: #283618;
+    padding: 35px;
+    display: grid;
+    /* Creates two columns */
+    grid-template-columns: 1fr auto; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styles for header h1 */
+header h1 {
+    font-size: 70px;
+    color: #FEFAE0;
+}
+
+/* Set the hamburger icon to not be visible initially */
+.bar {
+    display: none;
+}
+
+nav {
+    font-size: 25px;
+}
+
+nav ul {
+    display: grid;
+    /* Creates a grid with 6 columns */
+    grid-template-columns: repeat(6, auto); 
+    gap: 10px;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+}
+
+/* Styles for nav links */
+nav li a {
+    text-decoration: none;
+    color:#DDA15E ;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Hover effects for nav links */
+nav a:hover {
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+
+}
+
+nav .dropdown {
+    position: relative;
+}
+
+/* Styles for nav dropdown button */
+nav .dropbtn {
+    background-color: transparent;
+    color: #DDA15E;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles for nav dropdown */
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #283618;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+}
+
+/* Styles for nav dropdown links */
+nav .dropdown-content a {
+    color: #FEFAE0;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for nav dropdown sections */
+nav .dropdown-content a:hover {
+    background-color: #DDA15E;
+}
+
+/* Show dropdown when hovering over the Portfolio menu item */
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styles for slogan subheader */
+.Subheader {
+    background-color: #606C38;
+    padding: 5px; 
+}
+
+/* Styles for subheader text */
+.Subheader h2 {
+    margin-left: 10px;
+    font-size: 25px; 
+    color: #FEFAE0;
+    text-shadow: 1px 2px black;
+}
+
+/* Styles fpr main body content */
+main {
+    background-color: #FEFAE0;
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Styles for main h2 */
+main h2 {
+    font-size: 35px;
+    color: #283618;
+    margin-bottom: 20px;
+}
+
+/* Styles for main p */
+main p {
+    margin-bottom: 20px;
+}
+
+/* Styles for footer class */
+.Footer {
+    background-color: #283618; 
+    padding: 20px 0; 
+    display: grid;
+    /* Center the content in the footer */
+    justify-items: center; 
+}
+
+/* Styles for footer header */
+.Footer h4 {
+    font-size: 35px; 
+    color: #FEFAE0;
+    margin-bottom: 20px;
+}
+
+/* Styles for footer list */
+.Footer ul {
+    list-style-type: none;
+    display: grid;
+    /* Two columns for footer*/
+    grid-template-columns: repeat(2, auto); 
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styles for footer img */
+.Footer img {
+    max-height: 80px;
+}
+
+/* Styles for footer img links */
+.Footer li a {
+    color:#DDA15E;
+    margin: 5px;
+}
+
+/* Hover effects for footer img links */
+.Footer li a:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+/* Styles for footer p */
+.Footer p {
+    color: #fff;
+}
+
+/* Styles for footer p links */
+.Footer p a{
+    color: #DDA15E  ;
+}
+
+/* Hover effects for footer p links */
+.Footer p a:hover {
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+/* Styles for footer img list */
+#XLogo,
+#faceBookLogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styles for footer img */
+#XLogo img,
+#faceBookLogo img {
+    border-radius: 10px;
+}
+
+   /* Center the main container on the page */
+   #gnome-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Center the card */
+.gnome-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default Gnome Image */
+.gnome-card img#gnome-image {
+  position: absolute;
+  top: 0;
+  width: 220px;
+  height: 500px;
+  object-fit: contain;
+  z-index: 0;
+}
+
+/* Carousel container */
+.carousel-container {
+  position: absolute;
+  top: 100px; /* Adjust the positioning based on where you want the carousels */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+/* Style the carousel */
+.carousel {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Ensuring the carousel images fit */
+.carousel-inner {
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 110px; /* Fit images to the gnome size */
+  height: 110px;
+  object-fit: contain;
+}
+
+/* Hide carousel arrows if not needed */
+.carousel-control-prev, .carousel-control-next {
+  background-color: black;
+}
+
+.gnome-section{
+    background-color: #606C38;
+}
+
+.gnome-section-header {
+    background-color: #FEFAE0
+
+}
+
+#gnome-section-p {
+    text-align: center;
+    color: #FEFAE0;
+    font-size: 1.25em;
+    margin: 1.5em auto;
+    padding: 0 2em;
+    max-width: 60em;
+    width: 100%;
+}
+
+
+/* Style for the random name section */
+.gnome-name, .gnome-purchase {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FEFAE0;
+    display: none; /* Hidden by default */
+}
+
+#gnome-name{
+    color: #A7BBEC;
+    font-weight: bold;
+}
+
+/* Button styling */
+#submit-btn, #purchase-btn{
+    display: block;
+    margin: 20px auto; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    background-color: #BC6C25; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/* Button hover effect */
+#submit-btn:hover, #purchase-btn:hover {
+    background-color: #89023E; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gnome-card {
+    width: 90%;
+    height: 450px;
+  }
+
+  .gnome-card img#gnome-image {
+    width: 180px;
+    height: 410px;
+  }
+
+  .carousel-item img {
+    width: 90px; /* Scale down carousel images for smaller screens */
+    height: 90px;
+  }
+
+  .carousel-container {
+    width: 80%;
+    top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gnome-card {
+    width: 100%;
+    height: 400px;
+  }
+
+  .gnome-card img#gnome-image {
+    width: 150px;
+    height: 350px;
+  }
+
+  .carousel-item img {
+    width: 80px; /* Further scale down carousel images */
+    height: 80px;
+  }
+
+  .carousel-container {
+    width: 80%;
+    top: 60px;
+  }
+
+}
+
+/* Mobile Media Query */
+@media (max-width: 768px) {
+    /* Stack the header elements vertically */
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Adjust header title size */
+    header h1 {
+        font-size: 50px;
+    }
+
+    /* Hide nav links initially */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Displays the hamburger icon for mobile viewport */
+    .menu-toggle .bar {
+        color: #FEFAE0;
+        width: 30px;
+        height: 4px;
+        margin: 6px 0;
+        border-radius: 5px;
+        display: block;
+        float: right;
+    }
+
+    /* Show the nav links when 'active' class is added */
+    nav ul.active {
+        display: flex;
+    }
+
+    /* Adjust the links inside the mobile menu */
+    nav li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    nav a {
+        font-size: 22px;
+        padding: 10px;
+        color: #FEFAE0;
+        text-decoration: none;
+    }
+
+    /* Hide dropdown content in mobile */
+    nav .dropdown-content {
+        display: none;
+    }
+
+    /* Show the dropdwn content when active */
+    nav .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    /* Decreases footer header size in mobile viewport */
+    .Footer h4{
+        font-size: 25px; 
+
+    }
+
+    /* Style for the footer p tags in mobile viewport */
+    .Footer p {
+        padding: 10px;
+        margin: auto;
+        text-align: center;
+    }
+
+}
+
+/* For tablets and larger screens, show the nav links as a grid */
+@media (min-width: 769px) {
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #DDA15E;
+        font-size: 20px;
+    }
+    
+    /* Nav link hover effect */
+    nav a:hover {
+        color: white;
+    }
+}
+
+
+
+
+
