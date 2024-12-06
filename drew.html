@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Drew Wilson's Portfolio - Gnome & Décor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <!-- Header Section -->
+<header class="header">
+    <div class="logo-container">
+        <h1>Drew Wilson's Portfolio<img src="images/logo.png" alt="Gnome & Décor Logo" class="logo">
+        </h1>
+    </div>
+    <nav>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar">☰</span>
+        </div>
+        <ul id="nav-links">
+            <!-- Nav links -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="createAGnome.html">Create a Gnome!</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- Dropdown Section for portfolios in the nav bar -->
+            <li class="dropdown">
+                <a href="#" class="dropbtn" id = "portfolio-link">Portfolios</a>
+                <ul class="dropdown-content">
+                    <li><a href="connor.html">Connor Spendlove</a></li>
+                    <li><a href="drew.html">Drew Wilson</a></li>
+                    <li><a href="chase.html">Chase Riggs</a></li>
+                    <li><a href="juan.html">Juan Orcela</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Subheader for slogan -->
+<section class = "Subheader">
+    <h2>Drew Wilson</h2>
+    <h6>"One of the greatest people to ever grace this planet"<br>-Paul Rudd</h6>
+</section>
+
+<!-- Main content section -->
+<main>
+    <img src="images/drew.jpeg" alt="Image of Drew Wilson" class="img-fluid rounded-circle" style="width: 200px; height: 250px; margin: 1em;">
+    <h2 class="drew">Accomplishments</h2>
+    <p class="drew">
+        <ul class="drew">
+            <li class="drew">I designed the Amazon website</li>
+            <li class="drew">Moderater on the official Gnome Discord</li>
+            <li class="drew">The Personal Assistant to Carl Sagan</li>
+            <li class="drew">Programmed the launcher for the Moon Landing in 1969</li>
+        </ul>
+    </p class="drew">
+</main>
+
+<!-- Footer content section-->
+<footer>
+    <section class="Footer" id="footer">
+        <p>This page was created by <a href="drew.html">Drew Wilson</a></p>
+        <p>Gnome & Décor&trade; 2024</p>
+      </section>
+</footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript for toggling the mobile menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+  </body>
+</html>

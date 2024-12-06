@@ -1,13 +1,13 @@
 /* Color Pallete -
- Dark Green: #283618,  
- Olive Green: #606C38, 
- Cream: #FEFAE0 
- Beige: #DDA15E 
- Burnt Orange: #BC6C25 
- Red: #89023E 
- Powder Blue: #A7BBEC */
+   Dark Green: #283618,  
+   Olive Green: #606C38, 
+   Cream: #FEFAE0 
+   Beige: #DDA15E 
+   Burnt Orange: #BC6C25 
+   Red: #89023E 
+   Powder Blue: #A7BBEC */
 
- /* Styles for entire page / CSS reset */
+/* Styles for entire page / CSS reset */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -20,63 +20,89 @@ body {
     display: grid;
     /* Header, main content, and footer */
     grid-template-rows: auto 1fr auto; 
-    /* Ensures the page covers full height of the viewport */
     min-height: 100vh; 
+    /* Font family */
     font-family: "Noto serif", serif;
 }
 
 /* Styles for header */
 header {
+    position: sticky;
+    top: -30px;
     background-color: #283618;
     padding: 35px;
     display: grid;
     /* Creates two columns */
-    grid-template-columns: 1fr auto; 
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 /* Styles for header h1 */
 header h1 {
-    font-size: 70px;
+    font-size: 3.25em;
     color: #FEFAE0;
+    text-align: center;
 }
 
-/* Set the hamburger icon to not be visible initially */
+
+/* Gnome logo styles */
+.logo {
+    width: 1.5em;
+    height: auto;
+}
+
+/* Set the hamburger icon to be visible initially */
 .bar {
-    display: none;
+    display: block;
 }
 
+/* Default mobile nav styles */
 nav {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 nav ul {
-    display: grid;
-    /* Creates a grid with 6 columns */
-    grid-template-columns: repeat(6, auto); 
-    gap: 10px;
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    width: 100%;
     list-style-type: none;
 }
 
+  /* Displays the hamburger icon for mobile viewport */
+  .menu-toggle .bar {
+    color: #FEFAE0;
+    width: 30px;
+    height: 4px;
+    margin: 6px 0;
+    border-radius: 5px;
+    display: block;
+    float: right;
+}
+
+/* Show the nav links when 'active' class is added */
+nav ul.active {
+    display: flex;
+}
+
 nav li {
-    display: inline;
+    text-align: center;
+    margin: 7px 0;
 }
 
-/* Styles for nav links */
-nav li a {
+nav a {
     text-decoration: none;
-    color:#DDA15E ;
+    color: #DDA15E;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 22px;
+    padding: 10px;
 }
 
-/* Hover effects for nav links */
 nav a:hover {
     color: white;
     text-decoration: none;
     transition: ease-in-out 0.2s;
-
 }
 
 nav .dropdown {
@@ -155,7 +181,52 @@ main p {
     margin-bottom: 20px;
 }
 
-/* Styles for footer class */
+/* Style for main p link */
+main p a {
+    color: #BC6C25;
+    text-decoration: none;
+}
+
+/* Hover effect for main p link */
+main p a:hover {
+    color: #283618;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
+/* Media content section */
+.media-content {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Video container */
+.video-container {
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+/* Adds a border to video */
+.video-border {
+    border: 10px solid #DDA15E; 
+    max-width: 100%; 
+    height: auto; 
+  }
+
+/* Image container */
+.image-container {
+    text-align: center;
+}
+
+/* Adds a border to img */
+.image-container img {
+    width: 50%; 
+    height: auto;
+    border: 10px solid #DDA15E;
+
+}
+
+/* Styles for footer */
 .Footer {
     background-color: #283618; 
     padding: 20px 0; 
@@ -166,7 +237,7 @@ main p {
 
 /* Styles for footer header */
 .Footer h4 {
-    font-size: 35px; 
+    font-size: 25px; /* Default mobile size */
     color: #FEFAE0;
     margin-bottom: 20px;
 }
@@ -188,7 +259,7 @@ main p {
 
 /* Styles for footer img links */
 .Footer li a {
-    color:#DDA15E;
+    color: #DDA15E;
     margin: 5px;
 }
 
@@ -216,6 +287,17 @@ main p {
     transition: ease-in-out 0.2s;
 }
 
+
+#drew-a {
+    color: #BC6C25
+}
+
+#drew-a:hover {
+    color: #606C38;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+}
+
 /* Styles for footer img list */
 #XLogo,
 #faceBookLogo,
@@ -234,6 +316,13 @@ main p {
     border-radius: 10px;
 }
 
+#fairy-img {
+    width: 300px;
+    height:auto;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
 /* Center the main container on the page */
 #gnome-main {
     display: flex;
@@ -244,9 +333,9 @@ main p {
 /* Gnome card styling */
 .gnome-card {
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 500px;
-  height: 500px;
+  height: 450px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
@@ -259,8 +348,8 @@ main p {
 .gnome-card img#gnome-image {
   position: absolute;
   top: 0;
-  width: 220px;
-  height: 500px;
+  width: 180px;
+  height: 410px;
   object-fit: contain;
   z-index: 0;
 }
@@ -268,10 +357,10 @@ main p {
 /* Carousel container, aligns the images  */
 .carousel-container {
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: 50%;
   transform: translateX(-50%);
-  width: 90%;
+  width: 80%;
 }
 
 /* Style the carousel */
@@ -286,8 +375,8 @@ main p {
 }
 
 .carousel-item img {
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
@@ -304,7 +393,6 @@ main p {
 /* Background color for different section */
 .gnome-section-header {
     background-color: #FEFAE0
-
 }
 
 #gnome-section-p, .portfolio-header p {
@@ -334,7 +422,7 @@ main p {
 }
 
 /* Button styling */
-#submit-btn, #purchase-btn, #resume-btn{
+#submit-btn, #purchase-btn, #resume-btn, #submit{
     display: block;
     margin: 20px auto; 
     padding: 10px 20px; 
@@ -348,7 +436,7 @@ main p {
 }
 
 /* Button hover effect */
-#submit-btn:hover, #purchase-btn:hover, #resume-btn:hover {
+#submit-btn:hover, #purchase-btn:hover, #resume-btn:hover, #submit:hover {
     background-color: #89023E; 
 }
 
@@ -430,147 +518,148 @@ main p {
 }
 
 
-/* Mobile Media Query */
-@media (max-width: 768px) {
-    /* Stack the header elements vertically */
+/* Tablet Media Query */
+@media (min-width: 768px) and (max-width: 1024px) {
     header {
-        grid-template-columns: 1fr;
-        text-align: center;
+        top: -40px;
     }
-
-    /* Adjust header title size */
+    
     header h1 {
-        font-size: 50px;
-    }
-
-    /* Hide nav links initially */
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /* Displays the hamburger icon for mobile viewport */
-    .menu-toggle .bar {
-        color: #FEFAE0;
-        width: 30px;
-        height: 4px;
-        margin: 6px 0;
-        border-radius: 5px;
-        display: block;
-        float: right;
-    }
-
-    /* Show the nav links when 'active' class is added */
-    nav ul.active {
+        font-size: 3.75em;
         display: flex;
+        justify-content: space-between;
     }
 
-    /* Adjust the links inside the mobile menu */
-    nav li {
-        text-align: center;
-        margin: 15px 0;
+    .logo {
+        width: 2em;
+        height: auto;
     }
 
-    nav a {
-        font-size: 22px;
-        padding: 10px;
-        color: #FEFAE0;
-        text-decoration: none;
-    }
-
-    /* Hide dropdown content in mobile */
-    nav .dropdown-content {
-        display: none;
-    }
-
-    /* Show the dropdwn content when active */
-    nav .dropdown.active .dropdown-content {
-        display: block;
-    }
-
-    /* Decreases footer header size in mobile viewport */
-    .Footer h4{
-        font-size: 25px; 
-
-    }
-
-    /* Style for the footer p tags in mobile viewport */
-    .Footer p {
-        padding: 10px;
-        margin: auto;
-        text-align: center;
-    }
-
-    /* Makes all gnome assets smaller  */
-    .gnome-card {
-        width: 90%;
-        height: 450px;
-      }
     
-      .gnome-card img#gnome-image {
-        width: 180px;
-        height: 410px;
-      }
-    
-      .carousel-item img {
-        width: 90px; 
-        height: 90px;
-      }
-    
-      .carousel-container {
-        width: 80%;
-        top: 80px;
-      }
+    .video-container {
+        max-width: 80%; 
+        margin: 0 auto; 
+    }
 
-}
+    .image-container img {
+        width: 30%; 
+        height: auto;
+    
+    }
 
-/* For tablets and larger screens, show the nav links as a grid */
-@media (min-width: 769px) {
+    /* Display the nav as grid for tablets */
     nav ul {
         display: grid;
         grid-template-columns: repeat(6, auto);
         gap: 10px;
-        list-style-type: none;
     }
 
-    nav a {
-        text-decoration: none;
-        color: #DDA15E;
-        font-size: 20px;
+    nav li a, #portfolio-link {
+        font-size: 0.9em;
     }
-    
-    /* Nav link hover effect */
-    nav a:hover {
-        color: white;
+
+    .bar, .menu-toggle{
+        display: none;
     }
+
+    .Footer h4 {
+        font-size: 30px;
+    }
+
+    .gnome-card {
+        width: 100%;
+        height: 500px;
+    }
+
+    .gnome-card img#gnome-image {
+        width: 220px;
+        height: 500px;
+    }
+
+    .carousel-container {
+        width: 90%;
+        top: 100px;
+    }
+
+    .accordion .card-header {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+      }
 }
 
-/* Addition query for gnomes to make them even smaller for smaller viewports */
-@media (max-width: 576px) {
+/* Desktop Media Query */
+@media (min-width: 1024px) {
+
+    header {
+        top: -40px;
+    }
+
+    header h1 {
+        font-size: 4em;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        gap: 10px;
+    }
+
+    .logo {
+        width: 2em;
+        height: auto;
+    }
+
+    .video-container {
+        max-width: 70%; 
+        margin: 0 auto; 
+    }
+
+    .image-container img {
+        width: 20%; 
+        height: auto;
+    
+    }
+
+    .bar, .menu-toggle{
+        display: none;
+    }
+
+    nav li a, #portfolio-link {
+        font-size: 1.25em;
+    }
+
+    .Footer h4 {
+        font-size: 35px;
+    }
+
     .gnome-card {
-      width: 100%;
-      height: 400px;
+        width: 100%;
+        height: 500px;
     }
-  
+
     .gnome-card img#gnome-image {
-      width: 150px;
-      height: 350px;
+        width: 220px;
+        height: 500px;
     }
-  
-    .carousel-item img {
-      width: 80px; 
-      height: 80px;
-    }
-  
+
     .carousel-container {
-      width: 80%;
-      top: 60px;
+        width: 90%;
+        top: 100px;
     }
-  
-  }
 
+    .accordion .card-header {
+        font-size: 1.7rem;
+    }
 
-
-
-
+    .carousel-item img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+      }
+}

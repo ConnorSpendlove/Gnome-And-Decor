@@ -19,10 +19,12 @@
   </head>
   <body>
 
-       <!-- Header Section -->
   <!-- Header Section -->
 <header class="header">
-    <h1>Gnome & Décor</h1>
+    <div class="logo-container">
+        <h1>Gnome & Décor<img src="images/logo.png" alt="Gnome & Décor Logo" class="logo">
+        </h1>
+    </div>
     <nav>
         <!-- Hamburger Menu Icon -->
         <div class="menu-toggle" id="mobile-menu">
@@ -37,7 +39,7 @@
             <li><a href="contact.html">Contact</a></li>
             <!-- Dropdown Section for portfolio's in the nav bar -->
             <li class="dropdown">
-                <a href="#" class="dropbtn">Portfolio's</a>
+                <a href="#" class="dropbtn" id = "portfolio-link">Portfolio's</a>
                 <ul class="dropdown-content">
                     <li><a href="connor.html">Connor Spendlove</a></li>
                     <li><a href="drew.html">Drew Wilson</a></li>
@@ -57,10 +59,37 @@
 <!-- Main content section -->
 <main>
     <h2>Welcome to Gnome & Décor</h2>
-    <p>At Gnome & Decor, we specialize in crafting whimsical, charming gnomes for all occasions. Whether you're looking for a fun addition to your garden or a personalized gift for a loved one, we've got you covered!</p>
-    <p>Our collection features a variety of styles, from classic garden gnomes to more modern and creative designs. We take pride in our craftsmanship and ensure that each gnome is made with care and attention to detail.</p>
+    <p>At Gnome & Décor, we specialize in crafting whimsical, charming gnomes for all occasions. Looking for a new addition to your garden? We've got you covered!</p>
     <p>Explore our shop to find the perfect gnome for you or create your own with our custom gnome design service!</p>
-    <p>Stay connected with us on social media to get updates on new gnome designs, sales, and much more!</p>
+    <p>Stay connected with us on <a href = "#footer">social media</a> to get updates on new gnome designs, sales, and much more!</p>
+
+    <section class="media-content">
+        <!-- Video -->
+        <div class="video-container">
+          <h2>Get to Know Us!</h2>
+          <div class="embed-responsive embed-responsive-16by9 video-border">
+            <video class="embed-responsive-item" controls poster="images/thumbnail.png">
+                <source src="videos/gnomes.mp4"type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        </div>
+  
+        <!-- Image -->
+        <div class="image-container" style="margin-top: 40px;">
+          <h2>Gnome of the Month!</h2>
+          <img src="images/gnome-of-the-week.jpg" alt="Gnome on a Table" class="img-fluid">
+          <p>This gnome was created by our brilliant designer Chase Riggs.</p>
+        </div>
+  
+    </section>
+
+    <div class="main-ending" style="margin-top: 40px;">
+      <h3>Why Choose Us?</h3>
+      <p>Our gnomes are made with high-quality materials, making them perfect for your garden or home. They are created eco-friendly as well! Each gnome is hand-crafted and fully customizable.</p>
+      <p>With years of experience and a passion for gnome-making, we promise to bring you the best gnomes you'll ever see!</p>
+    </div>
+    
 </main>
 
 <!-- Footer content section-->
