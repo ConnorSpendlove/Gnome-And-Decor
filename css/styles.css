@@ -666,6 +666,10 @@ main p a:hover {
         width: 80%;
         height: 300px;  
     }
+
+    #fairy-img {
+        width: 40%;
+    }
 }
 
 /* Desktop Media Query */
@@ -752,5 +756,9 @@ main p a:hover {
         .map {
             width: 80%;
             height: 400px;  
+        }
+
+        #fairy-img {
+            width: 30%;
         }
 }
