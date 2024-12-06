@@ -273,6 +273,7 @@ main p a:hover {
 /* Styles for footer p */
 .Footer p {
     color: #fff;
+    text-align: center;
 }
 
 /* Styles for footer p links */
