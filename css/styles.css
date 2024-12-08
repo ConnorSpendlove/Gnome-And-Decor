@@ -576,6 +576,65 @@ main p a:hover {
     height: 4.5em;
 } 
 
+/* Chase portfolio Styles */
+.cport h1{
+    text-align: center;
+}
+
+.cport h2{
+    text-align: center;
+}
+
+#chase {
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: 2em;
+}
+
+.chaseimage {
+    float: right;
+    padding-left: 30%;
+}
+
+#certificate {
+    background-color: olive;
+}
+
+/* Juan Portfolio Styles */
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .brand-name {
+    color: white;
+  }
+
+  .about {
+    width: 100%;
+    background-color: black;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-grow: 1;
+   flex-direction: column;
+}
+
+.description {
+    margin: 25px;
+    border: 5px blue;
+}
+
+.juan-body {
+    background-color: black;
+}
+
+
 
 /* Tablet Media Query */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -743,22 +802,22 @@ main p a:hover {
         object-fit: contain;
       }
 
-        /* STYLES RULES CHASE FOR CONTACT */
-    
-        #form h2 {
-            font-size: 2.5em;
-        }
-    
-        #form button {
-            font-size: 1.5em;
-        }
-    
-        .map {
-            width: 80%;
-            height: 400px;  
-        }
+    /* STYLES RULES CHASE FOR CONTACT */
 
-        #fairy-img {
-            width: 30%;
-        }
+    #form h2 {
+        font-size: 2.5em;
+    }
+
+    #form button {
+        font-size: 1.5em;
+    }
+
+    .map {
+        width: 80%;
+        height: 400px;  
+    }
+
+    #fairy-img {
+        width: 30%;
+    }
 }
